@@ -29,7 +29,7 @@ import {
       };
   
       axios
-        .post("http://localhost:3000/register", user)
+        .post("http://192.168.0.161:3000/register", user)
         .then((response) => {
           console.log(response);
           Alert.alert(

@@ -13,7 +13,7 @@ const ProfileScreen = () => {
     const fetchProfile = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/profile/${userId}`
+          `http://192.168.0.161:3000/profile/${userId}`
         );
         const { user } = response.data;
         setUser(user);
@@ -74,9 +74,9 @@ const ProfileScreen = () => {
           </View>
 
           <View>
-            <Text style={{ fontSize: 15, fontWeight: "400" }}>BTech.</Text>
+            <Text style={{ fontSize: 15, fontWeight: "400" }}>Bpharm.</Text>
             <Text style={{ fontSize: 15, fontWeight: "400" }}>
-              Movie freak | Musical Nerd
+              Nigerian | Movies | Musical Nerd
             </Text>
             <Text style={{ fontSize: 15, fontWeight: "400" }}>
               Love Yourself
